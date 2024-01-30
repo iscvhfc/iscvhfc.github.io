@@ -1,0 +1,14 @@
+.image-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .image-container img {
+    width: 3%; /* Ajusta el ancho de las imágenes según tus necesidades */
+    height: auto; /* Ajusta la altura de las imágenes proporcionalmente */
+  }
+
+  .small-image {
+    width: 10px; /* Ajusta el ancho de las imágenes según tus necesidades */
+    height: auto; /* Ajusta la altura de las imágenes proporcionalmente */
+  }

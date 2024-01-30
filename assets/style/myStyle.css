@@ -1,0 +1,25 @@
+.contenedor {
+    position: relative; /* Establece el contenedor como posición relativa */
+    width: 300px; /* Ancho del contenedor */
+    height: 200px; /* Alto del contenedor */
+  }
+  
+  .contenedor img {
+    position: absolute; /* Establece la imagen como posición absoluta dentro del contenedor */
+    top: -10%; /* Posiciona la imagen en el 50% de la altura del contenedor */
+    left: -100%; /* Posiciona la imagen en el 50% del ancho del contenedor */
+    transform: translate(50%, 30%); /* Centra la imagen correctamente */
+    width: 100%; /* Ancho de la imagen al 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+  }
+
+  .centrar-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .moverIzq{
+    text-align: right;
+  }

@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+  <title>Base de datos</title>
+
+  <link rel="stylesheet" href="dist/reset.css" />
+  <link rel="stylesheet" href="dist/reveal.css" />
+  <!--<link rel="stylesheet" href="dist/theme/black.css"> -->
+  <link rel="stylesheet" href="dist/theme/dracula.css" />
+
+  <!-- Theme used for syntax highlighted code -->
+  <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  <link rel="stylesheet" href="./assets/style/myStyle.css" />
+  <link rel="stylesheet" href="./assets/style/stilo.css">
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Inicio de una sección portada -->
+      <section class="slide no-slide-number" data-markdown>
+        <textarea data-tempate>
+          <img src="./assets/LogoUPT.png" alt="LogoUPT"
+          width="800"
+          height="350">
+					<h2> Base de Datos </h2> 
+          INGENIERÍA EN SISTEMAS 
+					</textarea>
+      </section>
+      
+      <section>
+        
+          <!-- Esta sección contiene el logotipo de la organización -->
+          <div class="contenedor">
+            <img src="./assets/LogoUPT.png" alt="LogoUPT" />
+          </div>
+  
+        <div>
+          <div>
+            <strong>
+              <h3>
+                BASES DE DATOS  
+              </h3>
+            </strong>
+            <div><br>
+          </div>
+        </div>
+        <strong>
+          UNIDADES DE APRENDIZAJE
+        </strong>
+        <div><br>
+          <ol>
+            <li><a href="">
+                Fundamentos de bases de datos
+                </a>
+            </li>
+
+            <li> <a href="https://iscvhfc.github.io/htmls/unidad2BD.html#/">
+                  Modelado de base de datos
+                </a>
+              </li> 
+                <li>
+                  <a href="">
+                    Construcción de base de datos
+                    </a>
+            </li>
+            <li> <a href="">
+                 Lenguaje estructurado de consulta
+                 </a>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+
+      <section> <!-- Inicio de una sección -->
+        <!-- Esta sección contiene el logotipo de la organización -->
+        <div class="contenedor">
+          <img src="./assets/LogoUPT.png" alt="LogoUPT" />
+        </div>
+        <!-- Esta sección contiene información sobre la administración del tiempo en las organizaciones -->
+        <section slide-number data-markdown>
+          <textarea data-tempate>
+          <h3>Introducción a la asignatura</h3>
+          <p>
+            Las bases de datos son un elemento fundamental en el entorno informático hoy en día, 
+           y tienen aplicación en la práctica en una aplia totalidad de campos contextuales.
+          </p>
+          <p>
+            El objetivo principal de un Sistema de Información es procesar la información de manera eficiente
+           y efectiva, para apoyar la toma de decisiones, el control y la coordinación dentro de una organización. 
+          </p> 
+        </textarea>
+        </section>
+        <section>
+          <h2>Unidad I</h2>
+
+          <section>
+
+            <ol>
+              <li>
+                <h4> Fundamentos de base de datos</h4>
+
+              </li>
+            </ol>
+            <ul>
+              <li>
+                <strong>
+                  Introducción a las bases de datos
+                </strong>
+
+
+
+              </li>
+              <li>
+                <strong>
+                  Componentes de los sistemas de bases de datos
+                </strong>
+
+
+
+              </li>
+              <li>
+                <strong>
+                  <a href="https://iscvhfc.github.io/htmls/Cpractico.html">Caso práctico</a>
+                </strong>
+
+
+
+              </li>
+            </ul>
+          </section>
+        </section>
+
+
+
+
+
+
+        <section data-markdown>
+          <textarea data-tempate>
+            <strong>
+              <h3>Introducción a las bases de datos</h3>
+            </strong>
+              <ul> 
+                <li>Historia</li>
+                <li>¿Qué es un dato?</li>
+                <li>La información</li>
+                <li>¿Qué es una base de datos?</li>
+                <li>Los sistemas de información</li>
+              </ul>
+          </textarea>
+        </section>
+
+      </section>
+      </section>
+      <!-- Fin de la sección -->
+
+      <section>
+        <h2>Historia</h2>
+        <section>
+
+          <h3>Orígenes</h3>
+          <p>Las bases de datos existen desde la Antigüedad.
+            Hablando de bases de datos ligadas a la informática,
+            se remonta a 1884 con <strong>Herman Hollerith</strong>,
+            con el tabulador electromagnético de tarjetas
+            perforadas para resumen de
+            información y posteriormente en apoyo a la contabilidad.</p>
+        </section>
+        <section>
+
+          <ul>
+            <strong>
+              <li>La década de los 50 y los 60</li>
+            </strong>
+
+            <ol>
+              <li>Cintas magnéticas</li>
+              <li>Discos duros</li>
+              <li>inició la primera generación de bases de datos de red (CODASYL) y las jerárquicas (IMS)</li>
+            </ol>
+        </section>
+        <section>
+          <ul>
+            <strong>
+              <li>Los años 70 y 80</li>
+            </strong>
+
+            <ol>
+              <li>Edgar Frank Codd, científico informático inglés, definió el modelo relacional <strong>(12
+                  reglas)</strong> </li>
+              <li>Lawrence “Larry” Ellison, desarrolla el Relational Software System (Oracle Corporation)</li>
+              <li>Lenguaje de consulta estructurado (SQL – Structured Query Language)</li>
+            </ol>
+          </ul>
+        </section>
+        <section>
+          <ul>
+            <strong>
+              <li>A partir de los 90</li>
+            </strong>
+
+            <ol>
+              <li>Bases de datos orientas a objetos</li>
+              <li>Aparecen herramientas como Excel y Access</li>
+              <li>Nuevas definiciones de modelos de base de datos</li>
+            </ol>
+          </ul>
+        </section>
+
+      </section>
+
+      <section>
+        <strong>
+          <h3>¿Qué es un dato?</h3>
+        </strong>
+        <section>
+          <p>Un dato es la representación de una variable que puede ser cuantitativa o cualitativa
+            que indica un valor que se le asigna a las cosas y se representa a través de una
+            secuencia de símbolos, números o letras.</p>
+        </section>
+        <section>
+          <p>
+            Dato en informática es la expresión general que describe aquellas
+            características de la entidad sobre la que opera.
+          </p>
+        </section>
+        <section>
+          El dato es el <strong>elemento primario de la información</strong>
+          elemento primario de la información conformado por símbolos (letras, números, dibujos, señas, gestos)
+          que reunidos pueden cobrar significado.
+          <p>
+            <strong> Solo o aislado el dato no posee relevancia.</strong>
+          </p>
+
+        </section>
+      </section>
+
+      <section>
+        <strong>
+          <h3>La información</h3>
+        </strong>
+        <section>
+          <p>La información está constituida por un grupo de datos supervisados y ordenados,
+            que sirven para construir un mensaje basado en un cierto fenómeno o ente.
+          </p>
+          <p>
+            <strong>
+              La información permite resolver problemas y tomar decisiones,
+              ya que su aprovechamiento racional es la base del conocimiento.
+            </strong>
+          </p>
+          <p> <strong>
+              Informar, consiste en la transmisión de los datos
+            </strong>
+          </p>
+        </section>
+        <section>
+          <strong>
+            <p>La información es el conjunto de datos, procesados y ordenados para su comprensión,
+              que aportan nuevos conocimientos.
+              Puede ser a un individuo o sistema y sobre un asunto, materia, fenómeno o ente determinado.</p>
+          </strong>
+
+        </section>
+      </section>
+      <section>
+        <strong>
+          <h3>Sistema de información (SI)</h3>
+        </strong>
+        <section>
+          <p>
+            Se define como un sistema de información (SI) al sistema que toma, almacena y transmite información.</p>
+          <p>
+            En términos sencillos, es la interacción de personas y ordenadores para procesar e interpretar los datos.
+          </p>
+          <strong>
+            <p>
+              El término también define el software que se utiliza para las bases de datos.
+            </p>
+          </strong>
+
+        </section>
+        <section>
+          <p><strong>El objetivo principal de cualquier sistema de información es apoyar las operaciones,
+              la gestión, la toma de decisiones, el control y la coordinación de una organización</strong></p>
+        </section>
+        <section>
+          Estos son conjuntos de elementos interrelacionados que recopilan, procesan, almacenan y distribuyen
+          información
+        </section>
+        <section>
+          <strong>
+            Tipos de sistemas de información (SI)
+          </strong>
+          <p>
+          <ul>
+            <li>Procesamiento automatizado de las transacciones</li>
+            <li>Apoyo a la decisión</li>
+            <li>Gestión del conocimiento</li>
+            <li>Sistema de gestión de bases de datos (SGBD)</li>
+          </ul>
+          </p>
+        </section>
+      </section>
+      <section>
+        <strong>
+          <h3>¿Qué es una base de datos?</h3>
+        </strong>
+        <section>
+          <p>
+            Una base de datos es una recopilación organizada de información o datos estructurados,
+            que normalmente se almacena de forma electrónica en un sistema informático.
+          </p>
+        </section>
+        <section>
+          <p>
+            Se llama base de datos, también <q>banco de datos,</q> <strong><u>(Base de conocimientos)</u></strong> a un
+            conjunto de información perteneciente a un mismo contexto, que se encuentra ordenado de modo sistemático
+            para su posterior recuperación, análisis y/o transmisión.
+          </p>
+        </section>
+        <section>
+          <p>
+            Una Base de Datos es una herramienta que funciona como <strong>“almacén”</strong>, es decir,
+            guarda grandes cantidades de información de forma organizada para poder
+            encontrarla y utilizarla de manera fácil y ordenada
+          </p>
+        </section>
+        <section>
+          <p>
+
+            Las bases de datos tienen varias funciones empresariales importantes.
+          </p>
+          <strong>
+
+            <ol>
+              <li>Amacenamiento de datos</li>
+              <li>Recuperación de datos</li>
+              <li>Manipulación de datos</li>
+              <li>Seguridad de datos</li>
+              <li>Integridad de datos</li>
+              <li>Escalabilidad</li>
+              <li>Confiabilidad</li>
+
+            </ol>
+          </strong>
+        </section>
+        <section>
+          <div class="plan">
+            <img class="small-image-plan " src="./assets/myimg/LCBD.png" alt="conceptos">
+          </div>
+        </section>
+        <section>
+          <p>Elementos principales en las base de datos</p>
+          <div>
+            <ul>
+              <li>Entidad (Objeto)</li>
+              <ul>
+                <li>Atributo (Característica)</li>
+              </ul>
+              <li>Asociaciones entre entidades (Relación)</li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div>
+            <strong><u>
+                <li>Entidades (Objeto)</li>
+              </u></strong>
+            <p>Son objetos o conceptos del mundo real o abstarctos, que son representados en una base de datos.</p>
+            <p>
+              <strong>Por ejemplo</strong><br>En una base de datos de una empresa, las entidades podrían ser empleados,
+              clientes, productos, entre otros.
+            </p>
+          </div>
+        </section>
+        <section>
+          <div>
+            <strong>
+              <li><u>Atributos (Caracteristicas)</u></li>
+            </strong>
+          </div>
+          <div>
+            <p>Son las características o propiedades que describen a una entidad (Objeto) en una base de datos.
+            </p>
+            <p>
+              <strong>Por ejemplo</strong><br>
+
+              En una entidad "empleado" los atributos de la entidad podrían ser el nombre, la edad, el cargo, el
+              salario, entre otros.
+            </p>
+          </div>
+        </section>
+        <section>
+          <div>
+            <strong>
+              <li><u>Asociaciones entre entidades (Relaciones)</u></li>
+            </strong>
+          </div>
+          <div>
+            <p>Son relaciones que existen entre las entidades de una base de datos. Estas asociaciones pueden ser de
+              diferentes tipos, como uno a uno, uno a muchos, muchos a muchos. <br>
+
+              <strong>Por ejemplo</strong><br>
+              En una base de datos de una tienda, la asociación entre la entidad "cliente" y la entidad "compra" sería
+              de uno a muchos, ya que un cliente puede realizar varias compras.
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="plan">
+            <img class="small-image-plan " src="./assets/myimg/elementosbd.png" alt="elementosbd">
+          </div>
+        </section>
+        <section>
+          <strong>
+            <li>En resumen</li>
+          </strong>
+          <p>
+            Las bases de datos son fundamentales para el almacenamiento, recuperación, manipulación y protección de la
+            información, facilitando la gestión eficiente de los datos en entornos empresariales y de aplicaciones
+            informáticas.
+          </p>
+        </section>
+      </section>
+
+
+
+      <section>
+        <section data-markdown>
+          <textarea data-tempate>
+            <strong>
+              <h3>
+                2. Componentes de los sistemas de bases de datos
+              </h3>
+            </strong>
+              <ul> 
+                <li>Dato como campo</li>
+                <li>El hardware de una base de datos</li>
+                <li>El software de base de datos</li>
+                <li>Tipos de Usuarios de la dase de datos</li>
+                <li>Procedimientos de diseño de base de datos</li>
+              </ul>
+          </textarea>
+        </section>
+      </section>
+      <section>
+        <strong>
+          <li>Dato como campo</li>
+        </strong>
+        <section>
+          <p>
+            <li> <u>Dato:</u>
+              es el <strong>elemento primario de la información</strong> conformado por símbolos (letras, números,
+              dibujos, señas, gestos)
+              que reunidos pueden cobrar significado. </li><br>
+
+            <strong> Pero el dato solo o aislado no posee relevancia.</strong>
+          </p>
+        </section>
+        <section>
+          <p>
+            <li> <u>Campo:</u>
+              El llamado campo o atributo, es simplemente la abstracción del dato, representan las columnas que
+              conforman nuestra tabla o entidad de base de datos, la característica única, es que todos los elementos
+              que estén en el campo deben de ser de un tipo de dato especifico.
+          </p>
+          <strong>
+            <p>Representan caracteristicas abstractas de un objeto</p>
+          </strong>
+        </section>
+        <section>
+          <p>
+
+          </p>
+          <strong>
+            La colección de campos representan los registros
+          </strong>
+
+          <p>
+            Los registros son la recopilación de todos los campos en una fila, filas que conforman nuestra tabla o
+            entidad de base de datos, representando la información de contexto empresarial
+          </p>
+          <p>Tambien llamdos archivo</p>
+          <p>El archivo es todo lo que conforma la tabla, entidad u objeto de las bases de datos</p>
+        </section>
+        <section>
+          <div class="plan">
+            <img src="./assets/myimg/u2/Componentes.png" alt="Componentes" class="small-image-plan">
+            <img src="./assets/myimg/u2/Archivo.png" alt="archivo" class="small-image-proyecto">
+          </div>
+        </section>
+      </section>
+
+      <section>
+        <strong>
+          <li>El hardware de una base de datos</li>
+        </strong>
+        <section>
+          <p>
+            El hardware de una base de datos se refiere a los componentes físicos que se utilizan para almacenar y
+            procesar los datos. Esto incluye servidores, discos duros, unidades de cinta y otros dispositivos de
+            almacenamiento. El hardware de una base de datos debe ser lo suficientemente potente para manejar grandes
+            cantidades de datos y permitir un acceso rápido a ellos.
+          </p>
+        </section>
+      </section>
+
+      <section>
+        <li> <strong>
+
+            Software de base de datos
+          </strong></li>
+        <section>
+          <p>
+            Este se utiliza para crear, editar y mantener registros y archivos de bases de datos, <strong>
+              "la entrada de datos en una APP",
+            </strong> esto permite, la edición, la actualización, el almacenamiento de los datos, para la creación de
+            informes, copias de seguridad, y el control de acceso múltiple. </p>
+          <p> En ocasiones, también se denomina, <strong>
+              "sistema de gestión de bases de datos" (DBMS o SGDB).
+            </strong>
+          </p>
+        </section>
+        <section>
+          <p>
+
+            <strong>
+              Tipos de bases de datos
+            </strong>
+          </p>
+          <div>
+
+            <ul>
+              <li> <strong>
+                  Relacionales
+                </strong> </li>
+              <ul>
+                <li>SQL Server</li>
+                <li>MariaDB</li>
+                <li>Oracle</li>
+                <li>PostgreSQL</li>
+                <li>MySQL</li>
+              </ul>
+
+            </ul>
+          </div>
+        </section>
+        <section>
+          <p>
+
+            <strong>
+              Tipos de bases de datos
+            </strong>
+          </p>
+          <div>
+
+            <ul>
+              <li> <strong>
+                  No relacionales
+                </strong> </li>
+              <ul>
+                <li>Cassandra</li>
+                <li>Elasticsearch</li>
+                <li>Neo4j</li>
+                <li>MongoDB</li>
+                <li>Servicios</li>
+              </ul>
+
+            </ul>
+          </div>
+        </section>
+      </section>
+      <section>
+        <li>Tipos de Usuarios de la Base de Datos</li>
+        <section>
+          <ul>
+            <li>Usuario final</li>
+            <li>Analista De Sistemas (OLAP)</li>
+            <li>Diseñador de base de datos</li>
+            <li>Programador de aplicaciones (DRA)</li>
+            <li>Administrador de base de datos (DBA)</li>
+          </ul>
+        </section>
+      </section>
+      <section>
+        <li>Procedimientos de base de datos</li>
+        <section>
+          <div>
+            <p>
+              Los procedimientos de base de datos son simplemente las reglas e instrucciones que se debe seguir para
+              utilizar las bases de datos.
+            </p>
+            <p> Estas guían a los usuarios que operan y gestionan la información por medio de los SGBD.
+
+            </p>
+          </div>
+        </section>
+        <section>
+          <p>
+            El proceso es el siguiente: el desarrollador escribe un comando específico usando un lenguaje de acceso y lo
+            envía a la base de datos por medio del SGBD. </p>
+          <p> Este se encargará de procesar y generar la información a fin de ofrecer un resultado en un formato que el
+            usuario pueda leer.
+          </p>
+        </section>
+        <section>
+          <div class="plan">
+            <img src="./assets/myimg/u2/procedimientosCasoUso.png" alt="caso de uso" class="small-image-plan">
+            <img src="./assets/myimg/u2/modeloProcedimiento.png" alt="modeloProcedimiento" class="small-image-proyecto">
+          </div>
+        </section>
+      </section>
+      <section>
+
+         <a href="https://iscvhfc.github.io/htmls/Cpractico.html">Caso práctico</a> 
+      </section>
+    </div>
+  </div>
+
+  <script src="dist/reveal.js"></script>
+  <script src="plugin/notes/notes.js"></script>
+  <script src="plugin/markdown/markdown.js"></script>
+  <script src="plugin/highlight/highlight.js"></script>
+  <script>
+    // More info about initialization & config:
+    // - https://revealjs.com/initialization/
+    // - https://revealjs.com/config/
+    Reveal.initialize({
+      hash: true,
+
+      // Learn about plugins: https://revealjs.com/plugins/
+      plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+    });
+  </script>
+</body>
+
+</html>

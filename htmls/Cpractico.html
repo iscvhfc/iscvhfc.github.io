@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Casos</title>
+
+    <link rel="stylesheet" href="../dist/reveal.css">
+    <link rel="stylesheet" href="../dist/theme/sky.css" id="theme">
+    <style type="text/css" media="screen">
+        .slides section.has-dark-background,
+        .slides section.has-dark-background h3 {
+            color: #fff;
+        }
+
+        .slides section.has-light-background,
+        .slides section.has-light-background h3 {
+            color: #222;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="reveal">
+
+        <div class="slides">
+
+            <section>
+                <h3>Caso Practico</h3>
+            </section>
+
+            <section>
+                <p>
+                <h3>Analisis de requerimientos</h3>
+                </p>
+                <p>
+                <h5>Identificacion de componentes de base de datos</h5>
+                </p>
+
+            </section>
+
+            <section data-transition="zoom">
+                <h3>Enunciado alquiler de vivienda</h3>
+                <div class="">
+                    <p>
+                        Se desea gestionar los alquileres de viviendas de particulares,
+                        se requiere tener información de los propietarios que ofrecen sus
+                        viviendas en alquiler, así como de los inquilinos que se interesan por alquilar estas,
+                        obteniendo información sobre los alquilers y las viviendas alquiladas correspondientemente,
+                        saber de la duración de cada alquiler (histórico) y la información de renovación de un alquiler,
+                        por él inquilino.
+                    </p>
+                </div>
+
+            </section>
+
+            <section data-transition="zoom-in fade-out">
+                <h3>Indentifica los componentes</h3>
+                <p> de base de datos</p>
+                <p>Entidades, Atributos y Relaciones entre Entidades </p>
+            </section>
+
+
+            <section>
+                <section>
+                    <h3>Añalis del enunciado</h3>
+                </section>
+                <!--
+                <section data-transition="convex">
+                    <h3>Entidades</h3>
+                    <ul>
+                        <li>
+                            <h5> Vivienda</h5>
+                        </li>
+                        <li>
+                            <h5>Prorpietario</h5>
+                        </li>
+                        <li>
+                            <h5>Aquiler</h5>
+                        </li>
+                        <li>
+                            <h5>Inquilino</h5>
+                        </li>
+                </section>
+
+                <section data-transition="convex-in concave-out">
+                    <h3>Relaciones</h3>
+                    <ul>
+                        <li>
+                            <h5>Vivienda-Propietario</h5>-tiene
+                        </li>
+                        <li>
+                            <h5> Vivienda-alquiler</h5>-participa
+                        </li>
+                        <li>
+                            <h5> inquilino-Vivienda</h5>-alquila
+                        </li>
+                        <li>
+                            <h5> alquiler-inquilino</h5>-realizado por
+                        </li>
+                    </ul>
+                </section>
+
+                <section data-transition="zoom">
+                    <h3>Atributos</h3>
+                </section>
+                <section data-transition="concave">
+                    <ul>
+                        <li>
+                            <h5> Vivienda</h5>CodVivienda,Calle,Número,Descripción
+                        </li>
+                        <li>
+                            <h5>Prorpietario</h5>Ine,Nombre,ApellidoP, ApellidoM,TelContacto
+                        </li>
+                        <li>
+                            <h5>Aquiler</h5>CodAlquiler,FInicio,FFin,Importe,Fianza,FFirma
+                        </li>
+                        <li>
+                            <h5>Inquilino</h5>Ine,Nombre,ApellidoP, ApellidoM,FNancimiento,TelContacto,Referencias
+                        </li>
+                </section>
+                -->
+            </section>
+
+            <section>
+                <section id="stacked-slide" data-auto-animate>
+                    <a href="#/stacked-slide-1">Entidades,</a>
+                    <a href="#/stacked-slide-2">Relaciones,</a>
+                    <a href="#/stacked-slide-3">Atributos</a> <br>
+
+                    <div data-id="anim"
+                        style="background: indigo; padding: 8px; width: 50px; height: 50px; position: absolute; left: 50px;">
+                        A</div>
+
+                </section>
+                <section id="stacked-slide-1" data-auto-animate>
+                    <a href="#/stacked-slide-1">Entidades,</a>
+                    <a href="#/stacked-slide-2">Relaciones,</a>
+                    <a href="#/stacked-slide-3">Atributos</a> <br>
+
+                    <div data-id="anim"
+                        style="background: indigo; padding: 8px; width: 50px; height: 50px; position: absolute; left: 10px;">
+                        A</div>
+                    <h3>Entidades</h3>
+                    <ul>
+                        <li>
+                            <h5> Vivienda</h5>
+                        </li>
+                        <li>
+                            <h5>Prorpietario</h5>
+                        </li>
+                        <li>
+                            <h5>Aquiler</h5>
+                        </li>
+                        <li>
+                            <h5>Inquilino</h5>
+                        </li>
+                </section>
+                <section id="stacked-slide-2" data-auto-animate>
+                    <a href="#/stacked-slide-1">Entidades,</a>
+                    <a href="#/stacked-slide-2">Relaciones,</a>
+                    <a href="#/stacked-slide-3">Atributos</a><br>
+                    <div data-id="anim"
+                        style="background: indigo; padding: 8px; width: 50px; height: 50px; position: absolute; left: 25%;">
+                        A</div>
+                    <h3>Relaciones</h3>
+                    <ul>
+                        <li>
+                            <h5>Vivienda-Propietario</h5>-tiene
+                        </li>
+                        <li>
+                            <h5> Vivienda-alquiler</h5>-participa
+                        </li>
+                        <li>
+                            <h5> inquilino-Vivienda</h5>-alquila
+                        </li>
+                        <li>
+                            <h5> alquiler-inquilino</h5>-realizado por
+                        </li>
+                    </ul>
+                </section>
+                <section id="stacked-slide-3" data-auto-animate>
+                    <a href="#/stacked-slide-1">Entidades,</a>
+                    <a href="#/stacked-slide-2">Relaciones,</a>
+                    <a href="#/stacked-slide-3">Atributos</a><br>
+                    <div data-id="anim"
+                        style="background: indigo; padding: 8px; width: 50px; height: 50px; position: absolute; left: 20%;">
+                        A</div>
+                    <h3>Atributos</h3>
+                    <ul>
+                        <li>
+                            <h5> Vivienda</h5>CodVivienda,Calle,Número,Descripción
+                        </li>
+                        <li>
+                            <h5>Prorpietario</h5>Ine,Nombre,ApellidoP, ApellidoM,TelContacto
+                        </li>
+                        <li>
+                            <h5>Aquiler</h5>CodAlquiler,FInicio,FFin,Importe,Fianza,FFirma
+                        </li>
+                        <li>
+                            <h5>Inquilino</h5>Ine,Nombre,ApellidoP, ApellidoM,FNancimiento,TelContacto,Referencias
+                        </li>
+                </section>
+            </section>
+            <!--
+
+
+                <section data-transition="concave">
+                    <section>
+                     <h3>Ejercicio Biblioteca</h3>   
+                    </section>
+                    
+                    <section data-auto-animate>
+                        <h4 data-id="code-title">Caso práctico "La Biblioteca"</h4>
+                        <pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers="|4,8-11|17|22-24">
+                        <strong> <h4>
+                            Enunciado</h4>
+                Se desea gestionar la siguente información:</strong>  
+    
+                    En una biblioteca se tienen el código de socio que almacena 
+            datos relebantes de los socios que pertenecen a la biblioteca, 
+            en ésta, se almacena libros que se prestan a los socios, de igual manera 
+            se almacena información pertinente de los libros, se requiere 
+            saber si un ejemplar de la biblioteca está deteriorado o no., 
+            además se requiere controlar cada préstamo por fecha, registrando también, 
+            la fecha tope para devolver el libro,
+            (que son 15 días más que la fecha en la que se realiza el préstamo),
+            la fecha real en la que se devuelve el libro para saber 
+            el número de libros que se encuentran en la biblioteca.                    
+                    </code></pre>
+                    </section>
+                </section>
+            -->
+        
+
+
+
+
+
+
+
+
+           
+            <section>
+                 <h3>Ejercicio Biblioteca</h3>   
+                </section>
+                
+                <section data-auto-animate>
+                    <h4 data-id="code-title">Caso práctico "La Biblioteca"</h4>
+                    <pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers="|4,8-11|17|22-24">
+                    <strong> <h4>
+                        Enunciado</h4>
+            Se desea gestionar la siguente información:</strong>  
+
+                En una biblioteca se tienen el código de socio que almacena 
+        datos relebantes de los socios que pertenecen a la biblioteca, 
+        en ésta, se almacena libros que se prestan a los socios, de igual manera 
+        se almacena información pertinente de los libros, se requiere 
+        saber si un ejemplar de la biblioteca está deteriorado o no., 
+        además se requiere controlar cada préstamo por fecha, 
+        registrando también, 
+        la fecha tope para devolver el libro,
+        (que son 15 días más que la fecha en la que se realiza el préstamo),
+        la fecha real en la que se devuelve el libro para saber 
+        el número de libros que se encuentran en la biblioteca.                    
+                </code></pre>
+                </section>
+
+                <section>
+                    <h3>Ejercicio "Parques naturales"</h3>   
+                   </section>
+                   
+                   <section data-auto-animate>
+                       <h4 data-id="code-title">Caso práctico "Parques Naturales"</h4>
+                       <pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers="|4,8-11|17|22-24">
+                       <strong> <h4>
+                           Enunciado</h4</strong>  
+                           
+                        La ministeria del medio ambiente  ha decidido crear un sistema de información
+                    sobre los paquetes naturales gestionados por cada comunidad autónoma. Después de 
+                    realizar un detallado análisis, se ha llegado a las siguientes conclusiones:
+                        Una comunidad autónoma puede vender varios parques naturles. En una cominidad 
+                    autónoma existe un y sólo un organismo reponsables de los parques.
+                    Un parque puede estar compartido por más de una comunidad autónoma.
+                        Un Parque natural se identifica por un nombre, este fue declarado en una fecha, se 
+                    compone por varias áreas identificadas por su nombre y caracterizdas por 
+                    una determinada extención.
+                        Por motivos de eficiencia se desea favorecer las consultas referentes al número 
+                    de parques existentes en cada comunidad y la superficie total declarada parque 
+                    natural, en cada comunidad autónoma.
+                        En cada área forzosamente residen especies que pueden ser de tres tipos:
+                    Vegetales, Animales y Minerales.
+                        Cada especie tiene una denominación científica, una denominación vulgar
+                    y un número inventariado de individuos por área. 
+                        De las especies vegetales se desea saber si son florales y en qué periodo se 
+                    produce ésta, de los animales se desea saber su tipo de alimentación si es 
+                    herbívora, carnívora, omnívora y su periodo de celo anual, 
+                    de los minerales se desea saber si se trata de cristales o rocas, 
+                    además interesa registrar qué especies sirven de alimento a otras especies,
+                    teniendo en cuenta que ninguna especie mineral se considera alimento 
+                    de cualquier otra especie y que una especie vegetal no 
+                    se alimenta de ninguna otra especie.
+                    Del personal del parque se guarda el INE, número de seguridad social,
+                    nombre, dirección, teléfono, domicilio, celular y sueldo.
+                    Se distinguen los siguientes tipos de personal:
+                        Personal de gestión: registra los datos de los visitantes del parque y están 
+                    destinados en una entrada del parque, las entradas se identifican por un número.
+                        Personal de vigilancia: este vigila un área determinada del parque, 
+                    que recorre en un vehículo (tipo y matrícula).
+                        Personal de conservación: este mantiene y conserva un área determinada del parque, 
+                    cada uno lo realiza por especialidad determinada como "limpieza, caminos".
+                        Personal investigador: tiene titulación y puede realizar proyectos de 
+                    investigación conjuntamente sobre una determinada especie, de forma que 
+                    un investigador trabaje en un proyecto analizando varias especies, 
+                    una especie puede ser investigada por un investigador en varios proyectos 
+                    y en un proyecto una especie puede ser investigada por varios investigadores,
+                    un proyecto de investigación tiene un presupuesto y un periodo de realización.
+                        De un visitante se registra INE, nombre, domicilio y profesión, debe alojarse 
+                    dentro de los alojamientos que dispone el parque, estos tienen una 
+                    capacidad limitada y son de una determinada categoría.
+                        Los alojamientos organizan excursiones al parque en un vehículo o a pie en 
+                    determinados días de la semana y a una hora determinada a esta excursión 
+                    puede acudir cualquier visitante del parque.
+                   </code></pre>
+                   </section>
+                   
+                   
+            </section>
+            
+
+
+
+        </div>
+
+    </div>
+
+    <script src="../dist/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            center: true,
+            history: true,
+
+            // transition: 'slide',
+            // transitionSpeed: 'slow',
+            // backgroundTransition: 'slide'
+        });
+    </script>
+
+</body>
+
+</html>

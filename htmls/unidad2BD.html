@@ -1,0 +1,908 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Uniad 2 Base de Datos</title>
+
+    <link rel="stylesheet" href="../dist/reveal.css">
+    <link rel="stylesheet" href="../dist/theme/moon.css" id="theme">
+    <style type="text/css" media="screen">
+        .slides section.has-dark-background,
+        .slides section.has-dark-background h3 {
+            color: #fff;
+        }
+
+        .slides section.has-light-background,
+        .slides section.has-light-background h3 {
+            color: #222;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="reveal">
+
+        <div class="slides">
+
+            <section>
+                <h2>Unida-2</h2>
+                <h3>Modelado de base de datos</h3>
+
+            </section>
+
+            <section>
+                <h3>Modelado de base de datos</h3>
+                <div>
+                    <ol>
+                        <li>Modelos de bases de datos</li>
+                        <li>Diccionario de datos</li>
+                    </ol>
+                </div>
+            </section>
+
+            <section data-transition="zoom">
+                <h5>Modelos de bases de datos</h5>
+                <section>
+                    <li>Modelado de datos</li>
+                    <li>Historia del mdelo E/R</li>
+                    <li>Modelo entidad relación (E/R)</li>
+                    <li>Modelo E/R extendido</li>
+                </section>
+
+            </section>
+
+            <section data-transition="zoom-in fade-out">
+                <h3>Modelado de datos</h3>
+                <section data-transition="zoom">
+                    <div>
+                        <p>
+                            Los modelos de datos definen cómo se modela la estructura lógica de una base de datos.
+                            Los modelos de datos son entidades fundamentales
+                            para introducir la abstracción en una base de datos.
+                            Los modelos de datos definen cómo los datos se conectan entre sí y cómo se procesan
+                            y almacenan dentro del sistema.
+                            El primer modelo de datos fue el modelo de datos planos,
+                            donde todos los datos utilizados se mantendrían en el mismo plano.
+                            Eran propensos a introducir muchas anomalías de duplicación y actualización.
+                        </p>
+                    </div>
+                </section>
+                <section data-transition="convex">
+                    <div>
+                        <p>
+                            Los primeros modelos de datos no eran tan científicos, por lo tanto,
+                            eran propensos a <strong>anomalías de duplicación y actualización.</strong> <br>
+                            Un modelo de datos puede ser <strong>concreto o abstracto,</strong>
+                            y están representados en formato gráfico.
+                        </p>
+                    </div>
+                </section>
+
+                <section data-transition="convex">
+                    <div>
+                        <h3>
+                            Los tres tipos básicos de modelo de datos son:
+                        </h3>
+                        <ul>
+                            <li>Modelos de datos conceptuales</li>
+                            <li>Modelos de datos físicos</li>
+                            <li>Modelos de datos lógicos</li>
+                        </ul>
+                    </div>
+                </section>
+            </section>
+
+            <section data-transition="convex-in concave-out">
+                <h3>Historia del mdelo E/R</h3>
+                <section>
+                    <div>
+                        <p>Fue ideado por Peter Chen en los años 1976 y 1977 a través de dos artículos.
+                            Se trata de un modelo que sirve para crear esquemas conceptuales de bases de datos.
+                            De hecho es prácticamente un estándar para crear esta tarea.
+                            Se le llama modelo E/R e incluso EI (Entidad / Interrelación).
+                            Sus siglas más populares son las E/R porque sirven para el inglés y el español.
+                        </p>
+                    </div>
+                </section>
+                <section data-transition="convex-in concave-out">
+                    <div>
+                        <p>
+                            Inicialmente (en la propuesta de Chen) sólo se incluían
+                            los conceptos de entidad, relación y atributos
+                        </p>
+                        <img src="../assets/myimg/u2/introduccionLCBD.png" alt="" width="400px">
+                    </div>
+                </section>
+            </section>
+
+            <!-- modelo entidad relacion-->
+
+
+            <section data-transition="convex">
+                <h3>Modelo entidad relación</h3>
+                <section>
+                    <div>
+                        <p>
+                            Surge por la necesidad de contar con una herramienta para permitir el entendimiento y
+                            la comprensión entre distintos tipos de usuarios (diseñador, desarrollador y usuarios
+                            finales)
+                            con diferentes perspectivas. <br>
+                            Es una herramienta conceptual que no es una técnica y permite que esté libre de
+                            ambigüedades. <br>
+                            <u>
+                                El modelo Entidad-Relación es uno de los más utilizados.
+                            </u>
+                        </p>
+                    </div>
+                </section>
+                <section data-transition="convex-in concave-out">
+                    <div>
+                        <p>
+                            Arquitectura ANSI-SPARC <br>
+                            (American National Standards Institute, Standards Planning And Requirements Committee) <br>
+                            Define los niveles de abstracción para un SGBD.
+                        </p>
+                    </div>
+                    <img src="../assets/myimg/u2/niveles.png" alt="" width="400px">
+                </section>
+
+                <section data-transition="convex-in concave-out">
+
+                    <div>
+                        <p>
+                            Se trata de una herramienta cuyo objetivo es la representación y definición
+                            de todos los datos que se introducen, almacenan, transforman y producen
+                            dentro de un sistema de información, sin tener en cuenta las necesidades
+                            tecnológicas de ningun tipo.
+                        </p>
+                    </div>
+                </section>
+                <section data-transition="convex-in concave-out">
+
+                    <div>
+                        <p>
+                            El modelo de datos es un medio para comunicar el significado de los datos,
+                            las relaciones entre ellos y las reglas de negocio de un sistema de información. <br>
+                            El modelo entidad relación (E/R) proporciona una herramienta gráfica para representar
+                            información del mundo real a nivel conceptual.
+                        </p>
+                    </div>
+                </section>
+                <section data-transition="zoom">
+                    <h3>Modelos de Datos</h3>
+                    <div>
+                        <p>
+                        <ul>
+                            <li>
+                                Modelo Entidad- Relación
+                            </li>
+                            <li>
+                                Modelo Relacional
+                            </li>
+                            <li>
+                                Modelo Objeto-Relacional
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                </section>
+                <section data-transition="convex-in concave-out">
+                    <div>
+                        <p>
+                            Las ventajas de realizar un modelo de datos son:
+                        </p>
+                        <p>
+
+                        <ul>
+                            <li>
+                                Comprensión de los datos de una organización y del funcionamiento de la organización.
+                            </li>
+                            <li>
+                                Obtención de estructuras de datos independientes del entorno físico.
+                            </li>
+                            <li>
+                                Control de los posibles errores, detectar las deficiencias lo antes posible.
+                            </li>
+                            <li>
+                                Mejora del mantenimiento.
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+
+                </section>
+                <section data-transition="convex-in fade-out">
+                    <div>
+                        <p>
+                            Está basado en una percepción de un mundo real que consiste en una
+                            colección de objetos básicos, denominados entidades, y relaciones entre
+                            estos objetos.
+                        </p>
+                        <img src="../assets/myimg/u2/MER.png" alt="mer" width=800>
+                    </div>
+                </section>
+
+                <section data-transition="convex-in fade-out">
+                    <h3>Componentes del Modelo E/R</h3>
+                    <div>
+                        <p> <u>Entidad</u> es un objeto que es distinguible entre otros
+                            objetos.
+                        <ul>
+                            <li>Entidad física o concreta: empleado, persona, compañía, evento, planta</li>
+                            <li>Entidad lógica o abstracta: proyecto, materia, cuenta, pago</li>
+                        </ul>
+                        </p>
+                    </div>
+
+                </section>
+                <section data-transition="convex-in fade-out">
+                    <div>
+                        <p> <u>Un conjunto de entidades: </u> son entidades del mismo tipo,
+                            que comparten las mismas propiedades.
+
+                        <ul>
+                            <li>Ejemplo: conjunto de empleados, proyectos, compañías, árboles,
+                                materias, pagos (Modelo E/R extendido)</li>
+                        </ul>
+                        </p>
+                        <img src="../assets/myimg/u2/Entidades.png" alt="entidades">
+                    </div>
+
+                </section>
+                <section data-transition="convex-in fade-out">
+                    <div>
+                        <p> <u>Los atributos o propiedades:</u> son características que describen a las
+                            entidades.
+
+                        <ul>
+                            <li>Por ejemplo: las personas tienen nombres y direcciones.</li>
+                        </ul>
+                        </p>
+                    </div>
+
+                </section>
+                <section data-transition="convex-in fade-out">
+                    <h3>Tipos de atributos</h3>
+                    <div>
+                        <p>
+                        <ul>
+                            <li>Por su composición</li>
+                            <ul>
+                                <li>Simple</li>
+                                <li>Compuesto</li>
+                            </ul>
+
+                            <li>Por sus valores</li>
+                            <ul>
+                                <li>Monovalorados</li>
+                                <li>Multivalorados</li>
+                            </ul>
+                            <li>Por su origen</li>
+                            <ul>
+                                <li>Derivados</li>
+                                <li>Nulos</li>
+                            </ul>
+                        </ul>
+                        </p>
+                    </div>
+
+                </section>
+
+                <section data-transition="convex-in fade-out">
+                    <li>Simple</li>
+                    <ul>
+                        <li>Atributos Simples: Son atributos cuyos valores
+                            no pueden ser descompuestos en partes más pequeñas sin perder significado. </li>
+                    </ul>
+                    <img src="../assets/myimg/u2/simple.png" alt="simple" width="200">
+                </section>
+                <section data-transition="convex-in fade-out">
+                    <li>Compuesto</li>
+                    <ul>
+
+                        <li>Atributos Compuestos: Son aquellos cuyo valor
+                            puede ser descompuesto en partes más pequeñas sin perder significado. </li>
+
+                    </ul>
+                    <img src="../assets/myimg/u2/compueto.png" alt="compuesto">
+                </section>
+
+                <section data-transition="concave">
+
+                    <li>Univalorados</li>
+                    <ul>
+
+                        <li>Atributos Univalorados o monovaluados : Son aquellos que tienen un solo valor
+                            para cada una de las instancias de la entidad.</li>
+
+                    </ul>
+                    <img src="../assets/myimg/u2/mono.png" alt="mono">
+                </section>
+                <section data-transition="concave">
+
+                    <li>Multivalorados</li>
+                    <ul>
+
+                        <li>Atributos Multivalorados: Son los atributos que pueden tener muchos valores para cada una de
+                            las instancias de la entidad</li>
+
+                    </ul>
+                    <img src="../assets/myimg/u2/multi.png" alt="multi">
+                </section>
+                <section data-transition="concave">
+
+                    <li>Derivados</li>
+                    <ul>
+
+                        <li>Atributos Derivados: Son atributos cuyos valores son calculados
+                            con base en los valores de otros atributos.
+                            (Calculado numéricamente a través de una fórmula matemática.)
+                        </li>
+
+                    </ul>
+                    <img src="../assets/myimg/u2/derivado.png" alt="derivados">
+                </section>
+                <section data-transition="concave">
+
+                    <li>Nulos</li>
+                    <ul>
+                        <li>Atributos Nulos: Son aquellos atributos que pueden no poseer valores para ciertas o todas
+                            las instancias de una entidad. Esta ausencia de valores se puede deber a dos razones:</li>
+                        <ul>
+                            <li>Que el atributo no aplica para esa instancia de la entidad.</li>
+                            <li>Que no se conozca el valor del atributo para la instancia de la entidad.</li>
+                        </ul>
+                        Ejemplo email-ENFERMERA
+                    </ul>
+
+                    En el Modelo E/R se deben evitar, atributos nulos.
+
+                </section>
+
+
+
+
+
+
+                <section data-transition="zoom">
+                    <h3>Dominio</h3>
+                    <p>
+                        Un atributo representa una propiedad de interés de una entidad.
+                        Cada atributo de una relación se caracteriza por un nombre y por un dominio.
+                        El dominio indica qué valores pueden ser asumidos por una columna de la relación.
+                        Un dominio describe un conjunto de posibles valores para cierto atributo.
+                        Un dominio puede ser considerado como una restricción es decir restringe valores del atributo.
+                    </p>
+
+                </section>
+                <section>
+                    <div><img src="../assets/myimg/u2/dominio.png" alt="dominio"></div>
+                </section>
+                <section data-transition="concave">
+                    <h3>Relaciones</h3>
+                    <div>
+                        <p>
+                            Una relación es una asociación entre entidades, es decir, acción (verbo)
+                            que se asocia entre dos o más entidades <br>
+                            Ejemplo
+                        <table class="table">
+
+                            <tbody>
+                                <tr>
+                                    <th scope="row"></th>
+                                    <td>Ana</td>
+                                    <td>
+                                        <center>asignada </center>
+                                    </td>
+                                    <td>102</td>
+                                </tr>
+                                <th scope="row"></th>
+                                <td>entidad EMPLEADO</td>
+                                <td>
+                                    <center>conjunto de relaciones</center>
+                                </td>
+                                <td>entidad PROYECTO</td>
+
+                            </tbody>
+
+                        </table>
+                        </p>
+                    </div>
+                </section>
+                <section data-transition="concave">
+                    <div>
+                        <P>
+                            El conjunto de relaciones (representado por un rombo),
+                            asocia a 2 conjuntos de entidades: EMPLEADO y PROYECTO.
+                            Lo que nos indica en el MER que los empleados están asignados a los
+                            proyectos.
+                        </P>
+                        <img src="../assets/myimg/u2/relaciones.png" alt="">
+                    </div>
+                </section>
+
+                <section data-transition="convex-in fade-out">
+                    <div>
+                        <p>
+                        <ol>
+                            <li>La dependencia o asociación entre los conjuntos de entidades es
+                                llamada participación.</li>
+                            <li>En el ejemplo los conjuntos de entidades “EMPLEADO" y “PROYECTO"
+                                participan en el conjunto de relaciones EMPLEADO-PROYECTO.</li>
+                            <li>Se llama grado del conjunto de relaciones a la cantidad de conjuntos de
+                                entidades participantes en la relación.</li>
+                        </ol>
+                        </p>
+                    </div>
+                </section>
+
+                <section data-transition="convex-in fade-out">
+                    <div>
+                        <p>Tipos de Participación
+                        <ol>
+                            <li>Participación total.</li>
+                            <ul>
+                                <li>EMPLEADO tiene que estar asignado a un PROYECTO </li>
+                            </ul>
+                            <li>Participación parcial</li>
+                            <ul>
+                                <li>PROYECTO puede tener o no asignado un EMPLEADO</li>
+                            </ul>
+                        </ol>
+                        </p>
+                    </div>
+                </section>
+
+                <section data-transition="zoom">
+                    <h3>Tipos de relaciones</h3>
+                    <ul>
+                        <li>Binarias</li>
+                        <li>Ternarias</li>
+                        <li>Cuaternarias</li>
+                    </ul>
+                    <img src="../assets/myimg/u2/trelaciones.png" alt="tipode relaciones" width="600">
+                </section>
+                <section data-transition="concave">
+                    <h3>Restricciones</h3>
+                    <div>
+                        <p>
+                            El modelo E-R debe incluir reglas que deben mantener los datos.
+                        <ol>
+                            <li>Correspondencia de cardinalidades entere entidades</li>
+                            <li>Claves en atributos</li>
+                            <li>Restricciones de participación en relaciones</li>
+                        </ol>
+
+                        </p>
+                    </div>
+                </section>
+                <section data-transition="convex-in fade-out">
+                    <ul>
+
+                        <li>Correspondencia de cardinalidades</li>
+                        <ul>
+                            <li>
+                                Expresa el número de entidades las cuales pueden ser asociadas a
+                                otro conjunto de entidades através de un conjunto de relaciones.
+
+                            </li>
+                            <li>
+                                Se utilizan más en la descripción de un conjunto de relaciones
+                                binarias.
+                            </li>
+                        </ul>
+
+                    </ul>
+                </section>
+                <section data-transition="convex-in fade-out">
+                    <ul>
+
+                        <li>Correspondencia de cardinalidades</li>
+                        <ul>
+                            <li>
+                                Para un conjunto de relaciones binarias, el mapeo de cardinalidad es como sigue:
+
+                            </li>
+
+                        </ul>
+
+                    </ul>
+                    <img src="../assets/myimg/u2/correspondenciacard.png" alt="Correspondencia">
+                </section>
+
+                <section data-transition="convex-in fade-out">
+                    <div>
+                        <P>Ejemplos: correspondencia de cardinalidades
+                        <ul>
+                            <li>
+                                Él empleado está asignado a un sólo proyecto y el proyecto tiene
+                                asignado un sólo empleado
+                            </li>
+                            <img src="../assets/myimg/u2/unouno.png" alt="unouno">
+                            <li>
+                                Él empleado está asignado a varios proyectos y el proyecto tiene
+                                asignado un sólo empleado
+                            </li>
+                            <img src="../assets/myimg/u2/unomuchos.png" alt="unomuchos">
+                        </ul>
+                        </P>
+                    </div>
+                </section>
+                <section data-transition="none">
+                    <div>
+                        <P>Ejemplos: correspondencia de cardinalidades
+                        <ul>
+                            <li>
+                                Él empleado está asignado a un sólo proyecto y el proyecto tiene
+                                asignado muchos empleado
+                            </li>
+                            <img src="../assets/myimg/u2/muchosuno.png" alt="unomuchos">
+                            <li>
+                                Él empleado está asignado muchos proyectos y el proyecto tiene
+                                asignado muchos empleado
+                            </li>
+                            <img src="../assets/myimg/u2/muchosmuchos.png" alt="muchosmuchos">
+                        </ul>
+                        </P>
+                    </div>
+                </section>
+                <!--Claves atributos-->
+                <section data-transition="zoom">
+
+                    <div>
+                        <p>Claves en atributos son los atributos que distinguen a las entidades, existen tres tipos de
+                            claves:</p>
+                        <ul>
+                            <li>Superclaves: es un atributo o un conjunto de atributos que
+                                identifican de modo único una entidad dentro de un conjunto de
+                                entidades.</li>
+                            <li>Claves candidatas: es una superclave en la que ninguno de sus
+                                subconjuntos es una superclave del conjunto de entidades.</li>
+                            <li>Clave primaria: es una clave candidata que se elige para identificar
+                                una entidad en un conjunto de entidades.</li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section data-transition="concave">
+                    <ul>
+                        <li>Superclaves: {idEmp} {idEmp,nombre} {nombre,apellidos} {nombre,
+                            direccion} {idEmp, nombre,apellidos} "curp"</li>
+                        <li>Candidata: {idEmp} {nombre,apellidos} "RFC"</li>
+                        <li>Primaria: {idEmp} "consecutivo"</li>
+                    </ul>
+                    <img src="../assets/myimg/u2/claves.png" alt="claves">
+                </section>
+                <section data-transition="convex-in fade-out">
+                    <h3>Clave compuesta</h3>
+                    <img src="../assets/myimg/u2/C-compuesta.png" alt="C-compuesta" width="800">
+                </section>
+                <section data-transition="convex-in fade-out">
+                    <div>
+                        <p>Restricciones de participación relaciones
+                        <ul>
+                            <li>Parcial: Si sólo algunas entidades de E participan en las relaciones de P.</li>
+                            <li>Total: Si cada entidad de E participa, al menos, en una relación de P.</li>
+                        </ul>
+                        </p>
+                    </div>
+                </section>
+                <section data-transition="zoom">
+                    <div>
+                        <p>Un empleado <u>debe</u> estar asignado a un sólo proyecto y un proyecto
+                            <u>puede</u> tener asignados varios empleados
+                            <img src="../assets/myimg/u2/totalparcial.png" alt="totalparcial">
+                        </p>
+                    </div>
+                </section>
+                <section data-transition="zoom">
+                    <p>Entidades</p>
+                    <div>
+                        <p>Existen dos clases de entidades:
+                        <ul>
+                            <li>Regular o Fuerte:</li>
+                            <li>Débiles</li>
+                        </ul>
+                        </p>
+                    </div>
+                </section>
+                <section data-transition="concave">
+                    <div>
+                        <ul>
+                            <li>Fuerte: Las ocurrencias de un tipo de entidad
+                                regular tienen existencia propia, es decir no dependiente.</li>
+                        </ul>
+                    </div>
+                </section>
+                <section data-transition="concave">
+                    <div>
+                        <ul>
+                            <li>Débiles: La existencia de cada ocurrencia de una
+                                entidad débil depende de la existencia de la ocurrencia
+                                de la entidad regular de la que depende.</li>
+                            <p>Características:</p>
+                            <ul>
+                                <li>No tiene suficientes atributos para formar la clave primaria.</li>
+                                <li>Depende existencialmente de un conjunto de entidades fuertes o
+                                    propietarias</li>
+                                <li>Utilizan cardinalidad de UNO a MUCHOS.</li>
+                                <li>Debe de tener un discriminante.</li>
+                            </ul>
+                        </ul>
+                    </div>
+                </section>
+                <section data-transition="concave">
+                    <div>
+                        <p>Ejemplo:</p>
+                        <img src="../assets/myimg/u2/ejemplodebil.png" alt="ejemplodebil" width="900">
+                    </div>
+                </section>
+            </section>
+
+            </section>
+
+
+
+            <section>
+                <p>Modelo E-R extendido</p>
+
+                <section data-transition="convex-in fade-out">
+                    <div>
+                        <p>
+                            Es modelado de datos más avanzado debido a que incluye
+                            todos los conceptos del modelo Entidad-Relación e incorpora los
+                            conceptos de especialización, generalización, conjuntos de de entidades
+                            de superclase y subclase, herencia de atributos y agregación.
+                        </p>
+                    </div>
+                </section>
+
+
+                <section data-transition="concave">
+                    <div>
+                        <p>
+                            Este modelo extendido del MER incorpora mecanismos de adstracción para representar
+                            estructuras
+                            del mundo real (Conceptos de Orientación a Objetos) como:
+                        <ul>
+                            <li>La generalación</li>
+                            <li>La especialización</li>
+                            <li>La categorización</li>
+                            <li>La agregación</li>
+                            <li>La asociación</li>
+                        </ul>
+                        </p>
+                    </div>
+                </section>
+                <section data-transition="concave-out">
+
+                    <div class="card text-white bg-primary mb-3" style="max-width: 118rem;">
+                        <div class="card-header">Generalización</div>
+                        <div class="card-body">
+
+                            <p class="card-text">Permite abstraer un tipo de entidad de nivel superior (supertipo)
+                                a partir de varios tipos de entidad (subtipos); en estos casos los atributos comunes
+                                y relaciones de los subtipos se asignan al supertipo. Se pueden generalizar
+                                por ejemplo los tipos profesor y estudiante obteniendo el supertipo persona..</p>
+                        </div>
+                    </div>
+                    <img src="../assets/myimg/u2/extendido/generalizacion.png" alt="generalizacion" width="400">
+
+                </section>
+                <section data-transition="concave">
+                    <div>
+                        <div class="card mb-3" style="max-width: 1240px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <img src="../assets/myimg/u2/extendido/especializacion.png"
+                                        class="img-fluid rounded-start" alt="especializacion">
+                                </div>
+                                <div class="col-md-8  bg-secondary">
+                                    <div class="card-body">
+                                        <h5 class="card-title">especialización</h5>
+                                        <p class="card-text">Es la operación inversa a la generalización, en ella un
+                                            supertipo se
+                                            descompone en uno o varios subtipos, los cuales heredan todos los atributos
+                                            y relaciones del supertipo, además de tener los suyos propios.
+                                            Un ejemplo es el caso del tipo empleado, del que se pueden obtener los
+                                            subtipos
+                                            secretaria, técnico e ingeniero.</p>
+                                        <p class="card-text"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section data-transition="concave-out">
+                    <p><h5>Especialización y Generalización</h5></p>
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                              Especialización
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">La especialización parte de una única entidad.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                              Destaca
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Destaca las diferencias mediante la creación de entidades de nivel inferior.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                              Nivel inferior
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Esas entidades de nivel inferior pueden tener atributos o participar en relaciones que no se aplican a todas las entidades del conjunto de entidades de nivel inferior</div>
+                          </div>
+                        </div>
+                      </div>
+                </section>
+                <section data-transition="concave-out">
+                    <div>
+                        <div class="card text-white bg-success mb-3" style="max-width: 118rem;">
+                            <div class="card-header">Categoría</div>
+                            <div class="card-body">
+                            
+                              <p class="card-text">Se denomina categoría al subtipo que aparece como resultado de la 
+                                unión de varios tipos de entidad. En este caso, hay varios supertipos y un sólo subtipo. 
+                                Si por ejemplo se tienen los tipos persona y compañía y es necesario establecer 
+                                una relación con vehículo, se puede crear propietario como un subtipo unión de los dos primeros.</p>
+                            </div>
+                          </div>
+                    </div>
+                </section>
+                <section data-transition="concave-out">
+                    <div class="card text-white bg-dark mb-3" style="max-width: 118rem;">
+                        <div class="card-header">Agregación</div>
+                        <div class="card-body">
+                          
+                          <p class="card-text">La agregación es una abstracción a través de la
+                            cual las relaciones se tratan como entidades de
+                            nivel más alto. Por ejemplo, se tienen los tipos de entidad empresa y solicitante de empleo 
+                            relacionados mediante la relación entrevista; pero es necesario que cada 
+                            entrevista se corresponda con una determinada oferta de empleo, se puede crear un tipo de entidad compuesto por 
+                            empresa, entrevista y solicitante de empleo y relacionarla con el tipo de entidad 
+                            oferta de empleo. El proceso inverso se denomina desagregación.</p>
+                        </div>
+                      </div>
+                </section>
+                <section data-transition="concave">
+                    <div class="card text-dark bg-warning mb-3" style="max-width: 118rem;">
+                        <div class="card-header">Asociación</div>
+                        <div class="card-body">
+                          
+                          <p class="card-text">La asociación consiste en relacionar dos tipos de entidades que normalmente 
+                            son de dominios independientes, pero coyunturalmente se asocian.</p>
+                        </div>
+                      </div>
+                </section>
+                <section data-transition="concave-out">
+                    <div class="card mb-3">
+                        <img src="../assets/myimg/dEntidad.png" class="card-img-top" alt="entidades">
+                        <div class="card-body">
+                          <h5 class="card-title">Entidad</h5>
+                          <p class="card-text">La representación gráfica de un tipo de entidad.</p>
+                          <p class="card-text"></p>
+                        </div>
+                      </div>
+
+                </section>
+                <section data-transition="concave-out">
+                    <div class="card mb-3">
+                        <img src="../assets/myimg/u2/Atributos.png" class="card-img-top" alt="atributos">
+                        <div class="card-body">
+                          <h5 class="card-title">atributos</h5>
+                          <p class="card-text">Un atributo se representa mediante una elipse, con su nombre dentro, 
+                            conectada por una línea al tipo de entidad o relación.
+                            También pueden representarse en una lista asociada a la entidad.
+                          </p>
+                          <p class="card-text"></p>
+                        </div>
+                      </div>
+
+                </section>
+                <section data-transition="concave-out">
+                    <div class="card mb-3">
+                        <img src="../assets/myimg/u2/relacion.png" class="card-img-top" alt="Trelacion" width="200">
+                        <div class="card-body">
+                          <h5 class="card-title">relación</h5>
+                          <p class="card-text">El tipo de correspondencia se representa gráficamente con una etiqueta 1:1, 1:N o M:N, cerca de alguno de los vértices del rombo, o bien situando cada número o letra cerca de la entidad correspondiente, para mayor claridad.
+                          </p>
+                          <p class="card-text"></p>
+                        </div>
+                      </div>
+
+                </section>
+                <section data-transition="concave-out">
+                    <div class="card mb-3">
+                        <img src="../assets/myimg/u2/cardinalidad.png" class="card-img-top" alt="cardinalidad" width="50">
+                        <div class="card-body">
+                          <h5 class="card-title">Cardialidad</h5>
+                          <p class="card-text">La representación gráfica de las cardinalidades se realiza mediante una etiqueta del tipo (0,1), (1,1), (0,n) o (1,n), que se coloca en el extremo de la entidad que corresponda. </p>
+                          <p class="card-text"></p>
+                        </div>
+                      </div>
+
+                </section>
+                <section data-transition="concave-out">
+                    <div class="card mb-3">
+                        <img src="../assets/myimg/u2/exclusividad.png" class="card-img-top" alt="exclusividad" width="50">
+                        <div class="card-body">
+                          <h5 class="card-title">Exclusividad</h5>
+                          <p class="card-text">En la representación de las relaciones exclusivas se incluye un arco sobre las líneas que conectan el tipo de entidad a los dos o más tipos de relación.</p>
+                          <p class="card-text"></p>
+                        </div>
+                      </div>
+
+                </section>
+                <section data-transition="concave-out">
+                    <div class="card mb-3">
+                        <img src="../assets/myimg/u2/jerarquiasTS.png" class="card-img-top" alt="jerarquía" width="50">
+                        <div class="card-body">
+                          <h5 class="card-title">Jerarquía de tipos y subtipos</h5>
+                          <p class="card-text">La representación de las jerarquías se realiza mediante un triángulo invertido.</p>
+                          <p class="card-text"></p>
+                        </div>
+                      </div>
+
+                </section>
+                <sectgit ion data-transition="concave-out">
+                    <div class="card mb-3">
+                        <img src="../assets/myimg/u2/representacionR.png" class="card-img-top" alt="jerarquía" width="50">
+                        <div class="card-body">
+                          <h5 class="card-title">Jerarquía de tipos y subtipos</h5>
+                          <p class="card-text">La representación de las jerarquías se realiza mediante un triángulo invertido.</p>
+                          <p class="card-text"></p>
+                        </div>
+                      </div>
+
+                </section>
+
+
+            </section>
+
+            <section data-transition="concave">
+                <img src="../assets/myimg/Construccion.gif" alt="construccion" width="300px">
+            </section>
+
+
+
+        </div>
+
+    </div>
+
+    <script src="../dist/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            center: true,
+            history: true,
+
+            // transition: 'slide',
+            // transitionSpeed: 'slow',
+            // backgroundTransition: 'slide'
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

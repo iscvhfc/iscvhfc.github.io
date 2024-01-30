@@ -1,0 +1,67 @@
+.plan {
+    position: relative;
+    width: 100;
+    /* Ancho inicial del contenedor */
+    height: 990px;
+    /* Alto inicial del contenedor */
+    
+    /* overflow: hidden; Oculta cualquier contenido que exceda las dimensiones del contenedor */
+}
+
+
+
+
+.small-image-plan {
+    position: absolute; /* Establece la imagen como posición absoluta dentro del contenedor */
+    top: 60%; /* Posiciona la imagen en el 50% de la altura del contenedor */
+    left: 10%; /* Posiciona la imagen en el 50% del ancho del contenedor */
+
+    width: 200px; /* Ajusta el ancho de las imágenes según tus necesidades */
+    height: auto; /* Ajusta la altura de las imágenes proporcionalmente */
+    /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto;
+    /* Ajusta la altura de la imagen proporcionalmente */
+    transition: transform 0.9s ease-in-out;
+    /* Agrega una transición suave al hacer zoom y mover */
+  }
+  .small-image-proyecto {
+    position: absolute; /* Establece la imagen como posición absoluta dentro del contenedor */
+    top: 63%; /* Posiciona la imagen en el 50% de la altura del contenedor */
+    left: 60%; /* Posiciona la imagen en el 50% del ancho del contenedor */
+
+    width: 200px; /* Ajusta el ancho de las imágenes según tus necesidades */
+    height: auto; /* Ajusta la altura de las imágenes proporcionalmente */
+    /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto;
+    /* Ajusta la altura de la imagen proporcionalmente */
+    transition: transform 0.9s ease-in-out;
+    /* Agrega una transición suave al hacer zoom y mover */
+  }
+  .small-image-fechas {
+    position: absolute; /* Establece la imagen como posición absoluta dentro del contenedor */
+    top: 65%; /* Posiciona la imagen en el 50% de la altura del contenedor */
+    left: 90%; /* Posiciona la imagen en el 50% del ancho del contenedor */
+   
+    width: 80px; /* Ajusta el ancho de las imágenes según tus necesidades */
+    height: auto; /* Ajusta la altura de las imágenes proporcionalmente */
+    /* Asegura que la imagen ocupe todo el ancho del contenedor */
+    height: auto;
+    /* Ajusta la altura de la imagen proporcionalmente */
+    transition: transform 0.9s ease-in-out;
+    /* Agrega una transición suave al hacer zoom y mover */
+  }
+  .small-image-fechas:hover {
+    transform: scale(5.99) translate(-45px, -80px);
+        /* translate(-100px, -100px); Aplica un zoom del 20% cuando se pasa el cursor sobre la imagen */
+        /* Aplica un zoom del 20% y mueve la imagen 10px hacia la derecha y hacia abajo */
+}
+.small-image-proyecto:hover {
+    transform: scale(4.99) translate(-10px, -75px);
+        /* translate(-100px, -100px); Aplica un zoom del 20% cuando se pasa el cursor sobre la imagen */
+        /* Aplica un zoom del 20% y mueve la imagen 10px hacia la derecha y hacia abajo */
+}
+.small-image-plan:hover {
+    transform: scale(4.99) translate(50px, -70px);
+        /* translate(-100px, -100px); Aplica un zoom del 20% cuando se pasa el cursor sobre la imagen */
+        /* Aplica un zoom del 20% y mueve la imagen 10px hacia la derecha y hacia abajo */
+}
